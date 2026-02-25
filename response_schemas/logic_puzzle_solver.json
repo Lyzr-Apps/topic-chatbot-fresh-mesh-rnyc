@@ -1,0 +1,21 @@
+{
+  "agent_name": "Logic Puzzle Solver",
+  "agent_id": "699f1a8fd5b1b4a2410259f7",
+  "description": "Expert logic puzzle solver that takes any logic puzzle as input and provides a detailed, step-by-step solution with clear reasoning. Handles riddles, grid puzzles, syllogisms, river-crossing problems, truth-teller/liar puzzles, constraint satisfaction, and more.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "puzzle_restated": "string",
+    "reasoning": "string",
+    "solution": "string",
+    "verification": "string"
+  },
+  "example_response": {
+    "puzzle_restated": "The puzzle restated for clarity",
+    "reasoning": "Detailed step-by-step logical reasoning with deductions",
+    "solution": "The final answer to the puzzle",
+    "verification": "Verification that the solution satisfies all constraints"
+  },
+  "schema_file": "response_schemas/logic_puzzle_solver.json"
+}

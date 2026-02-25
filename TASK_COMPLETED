@@ -1,1 +1,1 @@
-UI generation complete for TopicBot - Topic Q&A Chatbot
+UI generation complete. Updated page.tsx with dual-mode support: Topic Q&A (existing) + Logic Puzzle Solver (new).

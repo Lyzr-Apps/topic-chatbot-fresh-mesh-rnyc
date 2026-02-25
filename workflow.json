@@ -4,8 +4,14 @@
       {
         "id": "input_node",
         "type": "Input",
-        "label": "User Query",
+        "label": "User Input",
         "nodeCategory": "input"
+      },
+      {
+        "id": "mode_selector",
+        "type": "Conditional",
+        "label": "Mode Selection",
+        "nodeCategory": "conditional"
       },
       {
         "id": "topic_qa_agent",
@@ -14,19 +20,37 @@
         "nodeCategory": "agent"
       },
       {
+        "id": "puzzle_solver_agent",
+        "type": "Agent",
+        "label": "Logic Puzzle Solver",
+        "nodeCategory": "agent"
+      },
+      {
         "id": "output_node",
         "type": "Output",
-        "label": "Agent Response",
+        "label": "Response",
         "nodeCategory": "end"
       }
     ],
     "edges": [
       {
         "source": "input_node",
+        "target": "mode_selector"
+      },
+      {
+        "source": "mode_selector",
         "target": "topic_qa_agent"
       },
       {
+        "source": "mode_selector",
+        "target": "puzzle_solver_agent"
+      },
+      {
         "source": "topic_qa_agent",
+        "target": "output_node"
+      },
+      {
+        "source": "puzzle_solver_agent",
         "target": "output_node"
       }
     ]
@@ -36,6 +60,11 @@
       "node_id": "topic_qa_agent",
       "agent_id": "699f1881d5b1b4a241025994",
       "name": "Topic Q&A Agent"
+    },
+    {
+      "node_id": "puzzle_solver_agent",
+      "agent_id": "699f1a8fd5b1b4a2410259f7",
+      "name": "Logic Puzzle Solver"
     }
   ]
 }
