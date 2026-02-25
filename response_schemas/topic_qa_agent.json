@@ -1,0 +1,14 @@
+{
+  "agent_name": "Topic Q&A Agent",
+  "agent_id": "699f1881d5b1b4a241025994",
+  "description": "Conversational agent that answers questions about a user-specified topic using its built-in knowledge. Maintains conversation context to support follow-up questions and topic exploration.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "response": "string"
+  },
+  "example_response": {
+    "response": "The agent's answer to the user's question about the specified topic"
+  }
+}

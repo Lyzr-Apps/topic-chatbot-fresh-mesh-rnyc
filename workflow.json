@@ -1,0 +1,41 @@
+{
+  "workflow": {
+    "nodes": [
+      {
+        "id": "input_node",
+        "type": "Input",
+        "label": "User Query",
+        "nodeCategory": "input"
+      },
+      {
+        "id": "topic_qa_agent",
+        "type": "Agent",
+        "label": "Topic Q&A Agent",
+        "nodeCategory": "agent"
+      },
+      {
+        "id": "output_node",
+        "type": "Output",
+        "label": "Agent Response",
+        "nodeCategory": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "input_node",
+        "target": "topic_qa_agent"
+      },
+      {
+        "source": "topic_qa_agent",
+        "target": "output_node"
+      }
+    ]
+  },
+  "agents": [
+    {
+      "node_id": "topic_qa_agent",
+      "agent_id": "699f1881d5b1b4a241025994",
+      "name": "Topic Q&A Agent"
+    }
+  ]
+}

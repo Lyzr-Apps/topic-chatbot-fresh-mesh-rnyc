@@ -1,0 +1,21 @@
+{
+  "agents": [
+    {
+      "agent_id": "699f1881d5b1b4a241025994",
+      "name": "Topic Q&A Agent",
+      "type": "single",
+      "model": "gpt-4.1",
+      "provider": "OpenAI",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "has_voice_config": false,
+      "has_image_output": false,
+      "has_file_output": false,
+      "has_schedule": false,
+      "has_knowledge_base": false,
+      "tools": []
+    }
+  ],
+  "workflow_type": "single_agent",
+  "total_agents": 1
+}
